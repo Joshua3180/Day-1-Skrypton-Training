@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Display</title>
+  <style>
+    /* Basic CSS for the input and button */
+    #inputField {
+      padding: 10px;
+      margin: 20px;
+    }
+    #submitButton {
+      padding: 8px 16px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <input type="text" id="inputField" placeholder="Enter something">
+    <button onclick="displayInput()">Submit</button>
+  </div>
+
+  <script>
+    function displayInput() {
+      var userInput = document.getElementById("inputField").value;
+      alert("Input received: " + userInput);
+    }
+  </script>
+</body>
+</html>
